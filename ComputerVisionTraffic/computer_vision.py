@@ -50,5 +50,13 @@ class Detect:
         except IndexError:
             print("Index Out of BOunds Error")
 
-
 # Here, the contours for the detection zone has to be set
+
+# Steps
+
+## Apply frame differencing on every pair of consecutive frames
+## Apply image thresholding on the output image of the previous step
+## Perform image dilation on the output image of the previous step
+## Find contours in the output image of the previous step
+## Shortlist contours appearing in the detection zone
+## Save frames along with the final contours
